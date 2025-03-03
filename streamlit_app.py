@@ -47,8 +47,8 @@ def generate_response(input_text):
 
 # Form for user input
 with st.form('my_form'):
-    text = st.text_area('Enter text:', 'Hi! How may I assist you today?')
-    submitted = st.form_submit_button('Submit')
+    text = st.text_area('Hi! How may I assist you today?', '')
+    submitted = st.form_submit_button('send')
 
     if submitted:
         generate_response(text)
