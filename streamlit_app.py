@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-st.set_page_config(page_title="🏗️🔗 Mistral Fine-Tuned Chatbot")
+st.set_page_config(page_title="🧱 GHG Assistant")
 st.title('🏗️🔗 Mistral Fine-Tuned Chatbot')
 
 # Fetch API key from environment variable
@@ -47,7 +47,7 @@ def generate_response(input_text):
 
 # Form for user input
 with st.form('my_form'):
-    text = st.text_area('Enter text:', 'What are the three key pieces of advice for learning how to code?')
+    text = st.text_area('Enter text:', 'Hi! How may I assist you today?')
     submitted = st.form_submit_button('Submit')
 
     if submitted:
