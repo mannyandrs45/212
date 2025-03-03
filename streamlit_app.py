@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="🧱 GHG Assistant")
-st.title('🏗️🔗 Mistral Fine-Tuned Chatbot')
+st.title('🧱 GHG Assistant')
 
 # Fetch API key from environment variable
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
